@@ -15,6 +15,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
 }
 
@@ -27,6 +28,7 @@ body{
     font-size: 2rem;
     background-size: cover;
     background-position: center center;
+   
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif; 
@@ -36,7 +38,10 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    font-size: 5.5rem;
+    font-size: 7rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
     
 }
 h3 {
@@ -58,6 +63,9 @@ h6 {
 a{
     text-decoration: none;
 }
+p {
+    margin-bottom: 3rem ;
+}
 .main-bg{
     background-image: url(assets/img/main-bg.svg);
     background-size: cover;
@@ -66,6 +74,7 @@ a{
 }
 .white-bg{
       background-color: var(--white);
+      color: var(--primary-color);
 }
 .main-content{
     max-width: 120rem;
@@ -83,6 +92,7 @@ a{
     top:0;
     left: 0;
     right: 0;  
+    z-index: 1;
     border-bottom: 0.01rem solid var(--light-gray); 
 }
 .meunu-content{
@@ -125,19 +135,26 @@ a{
     left: 25%;
  }
  .intro-content{
-    position: relative;
-    top: -8rem;
     display: grid;
-    grid-template-columns: 1fr 1.5fr ; 
-    gap:var(--gap);
+    grid-template-columns:1fr 1.5fr;
+    gap: var(--gap);
     height: 100vh;
  }
- .intro-text-content{
+ .intro-text-content, .intro-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
  }
- .intro-text-content h2 {
-    font-size: 8rem;
-    margin-bottom: 5rem;
- }   16:04 do video
+ 
+ .intro-img{
+    max-width: 100%;
+    height: auto;
+ }
+ .top3-content {
+    max-width: 64rem; ;
+    display: flex;
+    flex-flow:column wrap ;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+ }
